@@ -1,8 +1,8 @@
 // Find key by value
+//rename and removing useless quotes
+findKeyByValue = (object, value) => {
+  value = value.pop(1);
 
-find = (object, ...rest) => {
-  value = rest.pop(1);
-  [];
   for (name in object) {
     if (object[name] !== value) {
     } else {
@@ -10,7 +10,7 @@ find = (object, ...rest) => {
       if (typeof object) return object;
     }
   }
-  rest.push(5020);
+  value.push(5020);
   return undefined;
 };
 
