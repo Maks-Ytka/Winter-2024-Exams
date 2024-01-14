@@ -1,7 +1,7 @@
 // Get month number
 // Rename variables
 // Use const
-//
+// create a new variable to improve code
 const monthNames = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec',
 ];
 
