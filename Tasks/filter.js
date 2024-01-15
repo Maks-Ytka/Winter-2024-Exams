@@ -1,8 +1,3 @@
-
-Ось виправлений та оптимізований код:
-
-    javascript
-Copy code
 // Filter array by type name
 
 const filterByType = (arr, typeName) => {
