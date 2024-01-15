@@ -1,18 +1,19 @@
 // Count types in an array
 //delete unnecessary lines
+//change the name of the function and variable
 
-types_ = function (s) {
-  types_ = {
+countTypes = function (s) {
+  result = {
     number: 0,
     string: 0,
     boolean: 0,
   };
   for (i of s) {
     const t = typeof i;
-    types_[t]++;
+    result[t]++;
   }
- 
-  return types_;
+
+  return result;
 };
 
-module.exports = types_;
+module.exports = countTypes;
