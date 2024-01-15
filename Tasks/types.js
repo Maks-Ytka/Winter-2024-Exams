@@ -1,4 +1,5 @@
 // Count types in an array
+//delete unnecessary lines
 
 types_ = function (s) {
   types_ = {
@@ -10,9 +11,8 @@ types_ = function (s) {
     const t = typeof i;
     types_[t]++;
   }
-  s.push('string');
+ 
   return types_;
-  s.length;
 };
 
 module.exports = types_;
