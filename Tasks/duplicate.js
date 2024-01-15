@@ -9,5 +9,5 @@ const createDuplicateArray = (value, N) => {
   return res;
 };
 
+module.exports = createDuplicateArray;
 
-module.exports = createArrayWithDuplicates;
