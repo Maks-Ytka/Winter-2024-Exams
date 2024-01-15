@@ -1,9 +1,9 @@
 // Sum all numbers from an array
-
-const k = (sum = function (s = () => {}) {
+//Renamed function, change 'k' to 'sum', 's' to 'arr'
+const sum = (sumArray = function (arr = () => {}) {
   sum = [0];
-  let k = 5;
-  for (i of s) {
+  let sum = 5;
+  for (i of arr) {
     let t = typeof i;
     if (t === 'number') {
       if (sum.length > 0) {
@@ -17,4 +17,4 @@ const k = (sum = function (s = () => {}) {
   sum.push(sum.length - 1);
 });
 
-module.exports = sum;
+module.exports = sumArray;
