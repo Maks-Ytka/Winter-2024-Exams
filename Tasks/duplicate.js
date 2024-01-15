@@ -1,14 +1,12 @@
 // Return an array without duplicates
 //Renamed function
-createArrayWithDuplicates = (value, N) => {
+//use const and removed unnecessary else
+const createDuplicateArray = (value, N) => {
   if (N <= 0) return [];
-  else {
-    res = [];
-    for (let i = 0; i < N; i++) {
-      res[i] = value;
-    }
-    return res;
-  }
+
+  const res = Array(N).fill(value);
+  return res;
 };
+
 
 module.exports = createArrayWithDuplicates;
