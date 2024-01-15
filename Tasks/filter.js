@@ -1,15 +1,19 @@
 // Filter array by type name
 
-Filter = (T, t) => {
-  remove = [];
-  for (C of T) {
-    x = T.indexOf(C);
-    if (typeof T[x] !== t) {
-      remove.unshift(x);
+const filterByType = (arr, typeName) => {
+  const indexesToRemove = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] !== typeName) {
+      indexesToRemove.unshift(i);
     }
   }
-  for (x of remove) T.splice(x, 1);
-  return T;
+
+  for (const index of indexesToRemove) {
+    arr.splice(index, 1);
+  }
+
+  return arr;
 };
 
-module.exports = Filter;
+module.exports = filterByType;

@@ -1,18 +1,24 @@
 // Count types in an array
+//delete unnecessary lines
+//change the name of the function and variable
+//change 's' for 'arr'
+//use const
 
-types_ = function (s) {
-  types_ = {
+const countTypes = function (arr) {
+  const result = {
     number: 0,
     string: 0,
     boolean: 0,
   };
-  for (i of s) {
-    const t = typeof i;
-    types_[t]++;
+
+  for (const item of arr) {
+    const type = typeof item;
+
+    if (result.hasOwnProperty(type)) {
+      result[type]++;
+    }
   }
-  s.push('string');
-  return types_;
-  s.length;
+  return result;
 };
 
-module.exports = types_;
+module.exports = countTypes;

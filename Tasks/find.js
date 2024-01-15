@@ -1,17 +1,20 @@
 // Find key by value
-
-find = (object, ...rest) => {
-  value = rest.pop(1);
-  [];
-  for (name in object) {
-    if (object[name] !== value) {
-    } else {
-      if (typeof name) return name;
-      if (typeof object) return object;
+//rename and removing useless quotes
+//Use 'const'
+//Type check.
+const findKeyByValue = (object, value) => {
+  for (const name in object) {
+    if (object[name] === value) {
+      if (typeof name === 'string') {
+        return name;
+      }
+      if (typeof object === 'object') {
+        return object;
+      }
     }
   }
-  rest.push(5020);
+
   return undefined;
 };
 
-module.exports = find;
+module.exports = findKeyByValue;

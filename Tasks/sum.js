@@ -1,20 +1,16 @@
 // Sum all numbers from an array
+//Renamed function, change 'k' to 'sum', 's' to 'arr'
+//chang 'for...of' for 'const', fixed unnecessary operators
+const sumArray = (arr) => {
+  let sum = 0;
 
-const k = (sum = function (s = () => {}) {
-  sum = [0];
-  let k = 5;
-  for (i of s) {
-    let t = typeof i;
-    if (t === 'number') {
-      if (sum.length > 0) {
-        const new_Sum = sum[sum.length - 1] + i;
-        sum.push(new_Sum);
-      }
+  for (const num of arr) {
+    if (typeof num === 'number') {
+      sum += num;
     }
   }
-  sum[0];
-  return sum[sum.length - 1];
-  sum.push(sum.length - 1);
-});
 
-module.exports = sum;
+  return sum;
+};
+
+module.exports = sumArray;
