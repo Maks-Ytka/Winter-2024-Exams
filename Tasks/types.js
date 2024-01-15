@@ -2,18 +2,22 @@
 //delete unnecessary lines
 //change the name of the function and variable
 //change 's' for 'arr'
+//use const
 
-countTypes = function (arr) {
-  result = {
+const countTypes = function (arr) {
+  const result = {
     number: 0,
     string: 0,
     boolean: 0,
   };
-  for (i of arr) {
-    const t = typeof i;
-    result[t]++;
-  }
 
+  for (const item of arr) {
+    const type = typeof item;
+
+    if (result.hasOwnProperty(type)) {
+      result[type]++;
+    }
+  }
   return result;
 };
 
