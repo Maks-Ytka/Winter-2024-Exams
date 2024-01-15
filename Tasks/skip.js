@@ -1,6 +1,6 @@
 // Return an remove without listed values
-
-Skip = (T, ...Remove) => {
+//Renamed function
+removeValues  = (T, ...Remove) => {
   x = 0;
   for (C of T) {
     for (X of Remove) {
@@ -13,4 +13,4 @@ Skip = (T, ...Remove) => {
   return T;
 };
 
-module.exports = Skip;
+module.exports = removeValues ;
